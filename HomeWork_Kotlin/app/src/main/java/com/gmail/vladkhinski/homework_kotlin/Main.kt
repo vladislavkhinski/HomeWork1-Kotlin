@@ -60,27 +60,27 @@ fun parsing(str: String): String {
     val expression = ExpressionBuilder(str)
         .build()
     val result =expression.evaluate()
-   /*Это то как я пытался придти своими руками, но потом сам себя начал загонять в тупик
-    val num1 = 0
-    val num2 = 0
-    val leftList = mutableListOf<Int>()
-    var rightList = mutableListOf<Int>()
-    var listResult = mutableListOf<String>()
-    var res: String
-    for (i in str.indices) {
-        if (str[i] == '(') leftList.add(i)
-        if (str[i] == ')') rightList.add(i)
-    }
-    rightList = rightList.sortedDescending().toMutableList()
-
-    for (i in leftList.size - 1 downTo 0) {
-        res = str.substring(leftList[i] + 1, rightList[i])
-        listResult.add(res)
-    }
-
-    val result = 0*/
-
     return print("Выражение равняется: $result").toString()
+    /*Это то как я пытался придти своими руками, но потом сам себя начал загонять в тупик
+     val num1 = 0
+     val num2 = 0
+     val leftList = mutableListOf<Int>()
+     var rightList = mutableListOf<Int>()
+     var listResult = mutableListOf<String>()
+     var res: String
+     for (i in str.indices) {
+         if (str[i] == '(') leftList.add(i)
+         if (str[i] == ')') rightList.add(i)
+     }
+     rightList = rightList.sortedDescending().toMutableList()
+
+     for (i in leftList.size - 1 downTo 0) {
+         res = str.substring(leftList[i] + 1, rightList[i])
+         listResult.add(res)
+     }
+
+     val result = 0*/
+
 }
 
 
