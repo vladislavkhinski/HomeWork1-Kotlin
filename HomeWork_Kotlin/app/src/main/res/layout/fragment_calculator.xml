@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/main_view"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="#f2f2b1"
+        android:ellipsize="start"
+        android:gravity="end"
+        android:textColor="@color/black"
+        android:textSize="45sp" />
+
+    <TextView
+        android:id="@+id/result_view"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="#f2f2b1"
+        android:ellipsize="start"
+        android:gravity="end"
+        android:textColor="@color/black"
+        android:textSize="35sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/clear_view"
+                style="@style/OperationButton"
+                android:text="@string/ac" />
+
+            <TextView
+                android:id="@+id/opn_bracket_button"
+                style="@style/OperationButton"
+                android:text="@string/right_bracket" />
+
+            <TextView
+                android:id="@+id/close_bracket_button"
+                style="@style/OperationButton"
+                android:text="@string/close_bracket" />
+
+            <TextView
+                android:id="@+id/clear_button"
+                style="@style/OperationButton"
+                android:text="@string/delete_button" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/btn7"
+                style="@style/NumbersButton"
+                android:text="@string/btn_7"
+                tools:ignore="TextContrastCheck" />
+
+            <TextView
+                android:id="@+id/btn8"
+                style="@style/NumbersButton"
+                android:text="@string/btn_8"
+                tools:ignore="TextContrastCheck" />
+
+            <TextView
+                android:id="@+id/btn9"
+                style="@style/NumbersButton"
+                android:text="@string/btn_9"
+                tools:ignore="TextContrastCheck" />
+
+            <TextView
+                android:id="@+id/div_button"
+                style="@style/OperationButton"
+                android:text="@string/division_button" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/btn4"
+                style="@style/NumbersButton"
+                android:text="@string/btn_4"
+                tools:ignore="TextContrastCheck" />
+
+            <TextView
+                android:id="@+id/btn5"
+                style="@style/NumbersButton"
+                android:text="@string/btn_5"
+                tools:ignore="TextContrastCheck" />
+
+            <TextView
+                android:id="@+id/btn6"
+                style="@style/NumbersButton"
+                android:text="@string/btn_6"
+                android:textColor="#BA68C8" />
+
+            <TextView
+                android:id="@+id/multiply_button"
+                style="@style/OperationButton"
+                android:text="@string/multiply_button" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/btn1"
+                style="@style/NumbersButton"
+                android:text="@string/btn_1"
+                tools:ignore="TextContrastCheck" />
+
+            <TextView
+                android:id="@+id/btn2"
+                style="@style/NumbersButton"
+                android:text="@string/btn_2"
+                tools:ignore="TextContrastCheck" />
+
+            <TextView
+                android:id="@+id/btn3"
+                style="@style/NumbersButton"
+                android:text="@string/btn_3"
+                tools:ignore="TextContrastCheck" />
+
+            <TextView
+                android:id="@+id/minus_button_button"
+                style="@style/OperationButton"
+                android:text="@string/minus_button" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/btn0"
+                style="@style/NumbersButton"
+                android:text="@string/btn_0"
+                tools:ignore="TextContrastCheck" />
+
+            <TextView
+                android:id="@+id/dot_button"
+                style="@style/NumbersButton"
+                android:text="@string/dot_button"
+                tools:ignore="TextContrastCheck" />
+
+            <TextView
+                android:id="@+id/equals_button"
+                style="@style/NumbersButton"
+                android:text="@string/equals_button"
+                tools:ignore="TextContrastCheck" />
+
+            <TextView
+                android:id="@+id/plus_button"
+                style="@style/OperationButton"
+                android:text="@string/plus_button" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
